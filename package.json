@@ -1,0 +1,24 @@
+{
+  "name": "daap-parser",
+  "version": "0.0.1",
+  "description": "DAAP parser",
+  "main": "daapparser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/roblan/daap-parser",
+  "bugs": "https://github.com/roblan/daap-parser/issues",
+  "keywords": [
+    "daap",
+    "dmap",
+    "itunes",
+    "shairport-sync",
+    "shairport",
+    "forked-daapd"
+  ],
+  "author": {
+    "name": "Robert Lange",
+    "url": "https://github.com/roblan"
+  },
+  "license": "MIT"
+}
