@@ -4,10 +4,12 @@
   "description": "DAAP parser",
   "main": "daapparser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
-  "homepage": "https://github.com/roblan/daap-parser",
-  "bugs": "https://github.com/roblan/daap-parser/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roblan/daap-parser.git"
+  },
   "keywords": [
     "daap",
     "dmap",
@@ -20,5 +22,8 @@
     "name": "Robert Lange",
     "url": "https://github.com/roblan"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
 }

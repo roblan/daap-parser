@@ -19,8 +19,16 @@ const fnmap = {
 	[CONTENT_TYPE.DATE]: 'date',
 	[CONTENT_TYPE.VERSION]: 'version'
 };
+const LENGTHS = {
+	[CONTENT_TYPE.BYTE]: 1,
+	[CONTENT_TYPE.SHORT]: 2,
+	[CONTENT_TYPE.INT]: 4,
+	[CONTENT_TYPE.LONG]: 16,
+	[CONTENT_TYPE.DATE]: 4,
+	[CONTENT_TYPE.VERSION]: 4
+};
 
-var parse = {
+const parse = {
 	number: function (part) {
 		return part.readUIntBE(0, part.length);
 	},
@@ -40,24 +48,16 @@ var parse = {
 			parse.number(part.slice(3))
 		].join('.');
 	},
-	container: function (part, translate) {
+	container: function (part) {
 		var parsed = {},
-			parser,
 			content,
 			code,
-			codes,
 			end;
 
 		while (part.length > 8) {
 			code = parse.string(part.slice(0, 4));
 			end = parse.number(part.slice(4, 8)) + 8;
-
 			content = parse.tag(code, part.slice(8, end));
-
-			codes = [code];
-			if (translate && contentCodes[code]) {
-				code = contentCodes[code].name[0];
-			}
 
 			if(!parsed[code]) {
 				parsed[code] = content;
@@ -80,7 +80,7 @@ var parse = {
 		return parsed;
 	},
 	tag: function (code, part) {
-		return parse[fnmap[contentCodes[code] ? contentCodes[code].type : CONTENT_TYPE.LONG]](part);
+		return parse[fnmap[contentCodes[code] ? contentCodes[code].type : CONTENT_TYPE.LONG] || 'hex'](part);
 	},
 	translate: function (data, short) {
 		var parsed;
@@ -108,8 +108,62 @@ var parse = {
 	}
 };
 
+const encode = {
+	parse(obj) {
+		let buffer = Buffer.alloc(0);
+		Object.keys(obj).forEach((code) => {
+			const codeInfo = contentCodes[code];
+			if (codeInfo.type === CONTENT_TYPE.CONTAINER) {
+				if (codeInfo.isArray) {
+					const packed = Buffer.concat(obj[code].map(child => encode.parse(child)));
+					buffer = Buffer.concat([buffer, encode.wrapTag(code, packed)]);
+				} else {
+					const packed = encode.parse(obj[code]);
+					buffer = Buffer.concat([buffer, encode.wrapTag(code, packed)]);
+				}
+			} else if (codeInfo.isArray) {
+				const packed = Buffer.concat(obj[code].map(child => encode.tag(code, child, codeInfo.type)));
+				buffer = Buffer.concat([buffer, packed]);
+			} else {
+				buffer = Buffer.concat([buffer, encode.tag(code, obj[code], codeInfo.type)]);
+			}
+		});
+		return buffer;
+	},
+	wrapTag(code, data) {
+		return Buffer.concat([encode.string(code), encode.number(data.length, 4), data]);
+	},
+	tag(code, data, type) {
+		const decoded = encode[fnmap[type || CONTENT_TYPE.LONG]](data, LENGTHS[type]);
+		return this.wrapTag(code, decoded);
+	},
+	number(data, length) {
+		const buffer = Buffer.alloc(length);
+		buffer.writeUIntBE(data, 0, length);
+		return buffer;
+	},
+	string(data) {
+		return Buffer.from(data);
+	},
+	version(data) {
+		data = data.split('.');
+		return Buffer.concat([2, 1, 1].map(
+			(length, index) => encode.number(data[index], length))
+		);
+	},
+	date(data, length) {
+		return encode.number(new Date(data)/1000, length);
+	},
+	hex(data, length) {
+		data = data.substr(2);
+		data = new Array(length - data.length || data.length%2).fill(0).join('') + data;
+		return Buffer.from(data, 'hex');
+	}
+}
+
 module.exports = {
 	parse: parse.container,
 	parseTag: parse.tag,
+	encode: encode.parse,
 	translate: parse.translate
 };

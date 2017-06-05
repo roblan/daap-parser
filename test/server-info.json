@@ -1,0 +1,44 @@
+{
+	"msrv": {
+		"mstt": 200,
+		"mpro": "2.0.13",
+		"minm": "Jedi",
+		"apro": "3.0.13",
+		"aeSV": "3.0.13",
+		"ated": 7,
+		"asgr": 3,
+		"asse": "0x80000",
+		"aeMQ": 1,
+		"mscu": "0x3f",
+		"aeFR": 100,
+		"aeTr": 1,
+		"aeSL": 1,
+		"aeSR": 1,
+		"aeFP": 2,
+		"aeSX": "0x26f",
+		"ppro": 131073,
+		"msed": 1,
+		"msml": [
+			{
+				"msma": [
+					"0xa12e13bb2600",
+					"0x3eef42fb60"
+				]
+			}
+		],
+		"mslr": 1,
+		"mstm": 1800,
+		"msal": 1,
+		"msas": 3,
+		"msup": 1,
+		"mspi": 1,
+		"msex": 1,
+		"msbr": 1,
+		"msqy": 1,
+		"msix": 1,
+		"msrs": 1,
+		"msdc": 2,
+		"mstc": "2017-06-04T12:58:18.000Z",
+		"msto": 7200
+	}
+}
