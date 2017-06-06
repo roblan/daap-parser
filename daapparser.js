@@ -33,7 +33,7 @@ const parse = {
 		return part.readUIntBE(0, part.length);
 	},
 	string: function(part) {
-		return part.toString('utf8').replace(/�/, '');
+		return part.toString('latin1');//.replace(/�/, '');
 	},
 	date: function(part) {
 		return new Date(parse.number(part)*1000);
@@ -115,8 +115,10 @@ const encode = {
 			const codeInfo = contentCodes[code];
 			if (codeInfo.type === CONTENT_TYPE.CONTAINER) {
 				if (codeInfo.isArray) {
-					const packed = Buffer.concat(obj[code].map(child => encode.parse(child)));
-					buffer = Buffer.concat([buffer, encode.wrapTag(code, packed)]);
+					const packed = Buffer.concat(obj[code].map(
+						child => encode.wrapTag(code, encode.parse(child)))
+					);
+					buffer = Buffer.concat([buffer, packed]);
 				} else {
 					const packed = encode.parse(obj[code]);
 					buffer = Buffer.concat([buffer, encode.wrapTag(code, packed)]);
@@ -143,7 +145,7 @@ const encode = {
 		return buffer;
 	},
 	string(data) {
-		return Buffer.from(data);
+		return Buffer.from(data, 'latin1');
 	},
 	version(data) {
 		data = data.split('.');

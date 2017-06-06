@@ -1,0 +1,1007 @@
+{
+	"mccr": {
+		"mstt": 200,
+		"mdcl": [
+			{
+				"mcnm": "miid",
+				"mcna": "dmap.itemid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "minm",
+				"mcna": "dmap.itemname",
+				"mcty": 9
+			},
+			{
+				"mcnm": "mikd",
+				"mcna": "dmap.itemkind",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mper",
+				"mcna": "dmap.persistentid",
+				"mcty": 7
+			},
+			{
+				"mcnm": "mcon",
+				"mcna": "dmap.container",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mcti",
+				"mcna": "dmap.containeritemid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mpco",
+				"mcna": "dmap.parentcontainerid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mstt",
+				"mcna": "dmap.status",
+				"mcty": 5
+			},
+			{
+				"mcnm": "msts",
+				"mcna": "dmap.statusstring",
+				"mcty": 9
+			},
+			{
+				"mcnm": "mimc",
+				"mcna": "dmap.itemcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mctc",
+				"mcna": "dmap.containercount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mrco",
+				"mcna": "dmap.returnedcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mtco",
+				"mcna": "dmap.specifiedtotalcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "fch",
+				"mcna": "dmap.haschildcontainers",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mlcl",
+				"mcna": "dmap.listing",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mlit",
+				"mcna": "dmap.listingitem",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mbcl",
+				"mcna": "dmap.bag",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mdcl",
+				"mcna": "dmap.dictionary",
+				"mcty": 12
+			},
+			{
+				"mcnm": "msrv",
+				"mcna": "dmap.serverinforesponse",
+				"mcty": 12
+			},
+			{
+				"mcnm": "msau",
+				"mcna": "dmap.authenticationmethod",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msas",
+				"mcna": "dmap.authenticationschemes",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mslr",
+				"mcna": "dmap.loginrequired",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mpro",
+				"mcna": "dmap.protocolversion",
+				"mcty": 11
+			},
+			{
+				"mcnm": "msal",
+				"mcna": "dmap.supportsautologout",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msup",
+				"mcna": "dmap.supportsupdate",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mspi",
+				"mcna": "dmap.supportspersistentids",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msex",
+				"mcna": "dmap.supportsextensions",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msbr",
+				"mcna": "dmap.supportsbrowse",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msqy",
+				"mcna": "dmap.supportsquery",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msix",
+				"mcna": "dmap.supportsindex",
+				"mcty": 1
+			},
+			{
+				"mcnm": "msrs",
+				"mcna": "dmap.supportsresolve",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mstm",
+				"mcna": "dmap.timeoutinterval",
+				"mcty": 5
+			},
+			{
+				"mcnm": "msdc",
+				"mcna": "dmap.databasescount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mstc",
+				"mcna": "dmap.utctime",
+				"mcty": 10
+			},
+			{
+				"mcnm": "msto",
+				"mcna": "dmap.utcoffset",
+				"mcty": 6
+			},
+			{
+				"mcnm": "mlog",
+				"mcna": "dmap.loginresponse",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mlid",
+				"mcna": "dmap.sessionid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mupd",
+				"mcna": "dmap.updateresponse",
+				"mcty": 12
+			},
+			{
+				"mcnm": "musr",
+				"mcna": "dmap.serverrevision",
+				"mcty": 5
+			},
+			{
+				"mcnm": "muty",
+				"mcna": "dmap.updatetype",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mudl",
+				"mcna": "dmap.deletedidlisting",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mccr",
+				"mcna": "dmap.contentcodesresponse",
+				"mcty": 12
+			},
+			{
+				"mcnm": "mcnm",
+				"mcna": "dmap.contentcodesnumber",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mcna",
+				"mcna": "dmap.contentcodesname",
+				"mcty": 9
+			},
+			{
+				"mcnm": "mcty",
+				"mcna": "dmap.contentcodestype",
+				"mcty": 3
+			},
+			{
+				"mcnm": "ated",
+				"mcna": "daap.supportsextradata",
+				"mcty": 3
+			},
+			{
+				"mcnm": "asgr",
+				"mcna": "daap.supportsgroups",
+				"mcty": 3
+			},
+			{
+				"mcnm": "apro",
+				"mcna": "daap.protocolversion",
+				"mcty": 11
+			},
+			{
+				"mcnm": "avdb",
+				"mcna": "daap.serverdatabases",
+				"mcty": 12
+			},
+			{
+				"mcnm": "abro",
+				"mcna": "daap.databasebrowse",
+				"mcty": 12
+			},
+			{
+				"mcnm": "adbs",
+				"mcna": "daap.databasesongs",
+				"mcty": 12
+			},
+			{
+				"mcnm": "aply",
+				"mcna": "daap.databaseplaylists",
+				"mcty": 12
+			},
+			{
+				"mcnm": "apso",
+				"mcna": "daap.playlistsongs",
+				"mcty": 12
+			},
+			{
+				"mcnm": "arsv",
+				"mcna": "daap.resolve",
+				"mcty": 12
+			},
+			{
+				"mcnm": "arif",
+				"mcna": "daap.resolveinfo",
+				"mcty": 12
+			},
+			{
+				"mcnm": "abal",
+				"mcna": "daap.browsealbumlisting",
+				"mcty": 12
+			},
+			{
+				"mcnm": "abar",
+				"mcna": "daap.browseartistlisting",
+				"mcty": 12
+			},
+			{
+				"mcnm": "abcp",
+				"mcna": "daap.browsecomposerlisting",
+				"mcty": 12
+			},
+			{
+				"mcnm": "abgn",
+				"mcna": "daap.browsegenrelisting",
+				"mcty": 12
+			},
+			{
+				"mcnm": "aePP",
+				"mcna": "com.apple.itunes.is-podcast-playlist",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asal",
+				"mcna": "daap.songalbum",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asar",
+				"mcna": "daap.songartist",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asbr",
+				"mcna": "daap.songbitrate",
+				"mcty": 3
+			},
+			{
+				"mcnm": "ascm",
+				"mcna": "daap.songcomment",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asco",
+				"mcna": "daap.songcompilation",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ascp",
+				"mcna": "daap.songcomposer",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asda",
+				"mcna": "daap.songdateadded",
+				"mcty": 10
+			},
+			{
+				"mcnm": "asdm",
+				"mcna": "daap.songdatemodified",
+				"mcty": 10
+			},
+			{
+				"mcnm": "asdc",
+				"mcna": "daap.songdisccount",
+				"mcty": 3
+			},
+			{
+				"mcnm": "asdn",
+				"mcna": "daap.songdiscnumber",
+				"mcty": 3
+			},
+			{
+				"mcnm": "aseq",
+				"mcna": "daap.songeqpreset",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asgn",
+				"mcna": "daap.songgenre",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asdt",
+				"mcna": "daap.songdescription",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asrv",
+				"mcna": "daap.songrelativevolume",
+				"mcty": 2
+			},
+			{
+				"mcnm": "assr",
+				"mcna": "daap.songsamplerate",
+				"mcty": 5
+			},
+			{
+				"mcnm": "assz",
+				"mcna": "daap.songsize",
+				"mcty": 5
+			},
+			{
+				"mcnm": "asst",
+				"mcna": "daap.songstarttime",
+				"mcty": 5
+			},
+			{
+				"mcnm": "assp",
+				"mcna": "daap.songstoptime",
+				"mcty": 5
+			},
+			{
+				"mcnm": "astm",
+				"mcna": "daap.songtime",
+				"mcty": 5
+			},
+			{
+				"mcnm": "astc",
+				"mcna": "daap.songtrackcount",
+				"mcty": 3
+			},
+			{
+				"mcnm": "astn",
+				"mcna": "daap.songtracknumber",
+				"mcty": 3
+			},
+			{
+				"mcnm": "asur",
+				"mcna": "daap.songuserrating",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asyr",
+				"mcna": "daap.songyear",
+				"mcty": 3
+			},
+			{
+				"mcnm": "asfm",
+				"mcna": "daap.songformat",
+				"mcty": 9
+			},
+			{
+				"mcnm": "minm",
+				"mcna": "dmap.itemname",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asdb",
+				"mcna": "daap.songdisabled",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeNV",
+				"mcna": "com.apple.itunes.norm-volume",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeSP",
+				"mcna": "com.apple.itunes.smart-playlist",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asdk",
+				"mcna": "daap.songdatakind",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asul",
+				"mcna": "daap.songdataurl",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asbt",
+				"mcna": "daap.songbeatsperminute",
+				"mcty": 3
+			},
+			{
+				"mcnm": "abpl",
+				"mcna": "daap.baseplaylist",
+				"mcty": 1
+			},
+			{
+				"mcnm": "agrp",
+				"mcna": "daap.songgrouping",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeSI",
+				"mcna": "com.apple.itunes.itms-songid",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeAI",
+				"mcna": "com.apple.itunes.itms-artistid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aePI",
+				"mcna": "com.apple.itunes.itms-playlistid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeCI",
+				"mcna": "com.apple.itunes.itms-composerid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeGI",
+				"mcna": "com.apple.itunes.itms-genreid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "ascd",
+				"mcna": "daap.songcodectype",
+				"mcty": 5
+			},
+			{
+				"mcnm": "ascs",
+				"mcna": "daap.songcodecsubtype",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeSF",
+				"mcna": "com.apple.itunes.itms-storefrontid",
+				"mcty": 5
+			},
+			{
+				"mcnm": "apsm",
+				"mcna": "daap.playlistshufflemode",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aprm",
+				"mcna": "daap.playlistrepeatmode",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aePC",
+				"mcna": "com.apple.itunes.is-podcast",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asct",
+				"mcna": "daap.songcategory",
+				"mcty": 9
+			},
+			{
+				"mcnm": "ascn",
+				"mcna": "daap.songcontentdescription",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aslc",
+				"mcna": "daap.songlongcontentdescription",
+				"mcty": 9
+			},
+			{
+				"mcnm": "ascr",
+				"mcna": "daap.songcontentrating",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeHV",
+				"mcna": "com.apple.itunes.has-video",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeMK",
+				"mcna": "com.apple.itunes.mediakind",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeSN",
+				"mcna": "com.apple.itunes.series-name",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeEN",
+				"mcna": "com.apple.itunes.episode-num-str",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeES",
+				"mcna": "com.apple.itunes.episode-sort",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeSU",
+				"mcna": "com.apple.itunes.season-num",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeGH",
+				"mcna": "com.apple.itunes.gapless-heur",
+				"mcty": 5
+			},
+			{
+				"mcnm": "asaa",
+				"mcna": "daap.songalbumartist",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeGD",
+				"mcna": "com.apple.itunes.gapless-enc-dr",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeGU",
+				"mcna": "com.apple.itunes.gapless-dur",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeGE",
+				"mcna": "com.apple.itunes.gapless-enc-del",
+				"mcty": 5
+			},
+			{
+				"mcnm": "\u0000\u0000\u0000\u0000",
+				"mcna": "com.apple.itunes.req-fplay",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asgp",
+				"mcna": "daap.songgapless",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aePS",
+				"mcna": "com.apple.itunes.special-playlist",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ased",
+				"mcna": "daap.songextradata",
+				"mcty": 3
+			},
+			{
+				"mcnm": "asdr",
+				"mcna": "daap.songdatereleased",
+				"mcty": 10
+			},
+			{
+				"mcnm": "asdp",
+				"mcna": "daap.songdatepurchased",
+				"mcty": 10
+			},
+			{
+				"mcnm": "ashp",
+				"mcna": "daap.songhasbeenplayed",
+				"mcty": 1
+			},
+			{
+				"mcnm": "assn",
+				"mcna": "daap.sortname",
+				"mcty": 9
+			},
+			{
+				"mcnm": "assa",
+				"mcna": "daap.sortartist",
+				"mcty": 9
+			},
+			{
+				"mcnm": "assl",
+				"mcna": "daap.sortalbumartist",
+				"mcty": 9
+			},
+			{
+				"mcnm": "assu",
+				"mcna": "daap.sortalbum",
+				"mcty": 9
+			},
+			{
+				"mcnm": "assc",
+				"mcna": "daap.sortcomposer",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asss",
+				"mcna": "daap.sortseriesname",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asbk",
+				"mcna": "daap.bookmarkable",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asbo",
+				"mcna": "daap.songbookmark",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aspu",
+				"mcna": "daap.songpodcasturl",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeCR",
+				"mcna": "com.apple.itunes.content-rating",
+				"mcty": 9
+			},
+			{
+				"mcnm": "asai",
+				"mcna": "daap.songalbumid",
+				"mcty": 7
+			},
+			{
+				"mcnm": "asls",
+				"mcna": "daap.songlongsize",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeSG",
+				"mcna": "com.apple.itunes.saved-genius",
+				"mcty": 1
+			},
+			{
+				"mcnm": "meds",
+				"mcna": "dmap.editcommandssupported",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeHD",
+				"mcna": "com.apple.itunes.is-hd-video",
+				"mcty": 1
+			},
+			{
+				"mcnm": "mext",
+				"mcna": "dmap.objectextradata",
+				"mcty": 3
+			},
+			{
+				"mcnm": "meia",
+				"mcna": "dmap.itemdateadded",
+				"mcty": 5
+			},
+			{
+				"mcnm": "meip",
+				"mcna": "dmap.itemdateplayed",
+				"mcty": 3
+			},
+			{
+				"mcnm": "aeSE",
+				"mcna": "com.apple.itunes.store-pers-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeDR",
+				"mcna": "com.apple.itunes.drm-user-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeND",
+				"mcna": "com.apple.itunes.non-drm-user-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeK1",
+				"mcna": "com.apple.itunes.drm-key1-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeK2",
+				"mcna": "com.apple.itunes.drm-key2-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeDV",
+				"mcna": "com.apple.itunes.drm-versions",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeDP",
+				"mcna": "com.apple.itunes.drm-platform-id",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeXD",
+				"mcna": "com.apple.itunes.xid",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeMk",
+				"mcna": "com.apple.itunes.extended-media-kind",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeAD",
+				"mcna": "com.apple.itunes.adam-ids-array",
+				"mcty": 12
+			},
+			{
+				"mcnm": "aeMX",
+				"mcna": "com.apple.itunes.movie-info-xml",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aspc",
+				"mcna": "daap.songuserplaycount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "agac",
+				"mcna": "daap.groupalbumcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "asri",
+				"mcna": "daap.songartistid",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeCS",
+				"mcna": "com.apple.itunes.artworkchecksum",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeRS",
+				"mcna": "com.apple.itunes.rental-start",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeRD",
+				"mcna": "com.apple.itunes.rental-duration",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeRP",
+				"mcna": "com.apple.itunes.rental-pb-start",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeRU",
+				"mcna": "com.apple.itunes.rental-pb-duration",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aspl",
+				"mcna": "daap.songdateplayed",
+				"mcty": 10
+			},
+			{
+				"mcnm": "asvc",
+				"mcna": "daap.songprimaryvideocodec",
+				"mcty": 5
+			},
+			{
+				"mcnm": "mrpr",
+				"mcna": "dmap.remotepersistentid",
+				"mcty": 7
+			},
+			{
+				"mcnm": "\u0000\u0000\u0000\u0000",
+				"mcna": "com.apple.itunes.playlist-contains-media-type",
+				"mcty": 5
+			},
+			{
+				"mcnm": "aeMC",
+				"mcna": "com.apple.itunes.playlist-contains-media-type-count",
+				"mcty": 5
+			},
+			{
+				"mcnm": "agma",
+				"mcna": "daap.groupmatchedqueryalbumcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "agmi",
+				"mcna": "daap.groupmatchedqueryitemcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "askp",
+				"mcna": "daap.songuserskipcount",
+				"mcty": 5
+			},
+			{
+				"mcnm": "asac",
+				"mcna": "daap.songartworkcount",
+				"mcty": 3
+			},
+			{
+				"mcnm": "askd",
+				"mcna": "daap.songlastskipdate",
+				"mcty": 10
+			},
+			{
+				"mcnm": "mdst",
+				"mcna": "dmap.downloadstatus",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ases",
+				"mcna": "daap.songexcludefromshuffle",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeCd",
+				"mcna": "com.apple.itunes.cloud-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeCU",
+				"mcna": "com.apple.itunes.cloud-user-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeCM",
+				"mcna": "com.apple.itunes.cloud-match-type",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asrs",
+				"mcna": "daap.songuserratingstatus",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aslr",
+				"mcna": "daap.songalbumuserrating",
+				"mcty": 1
+			},
+			{
+				"mcnm": "asas",
+				"mcna": "daap.songalbumuserratingstatus",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeCF",
+				"mcna": "com.apple.itunes.cloud-flavor-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeCK",
+				"mcna": "com.apple.itunes.cloud-library-kind",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeGs",
+				"mcna": "com.apple.itunes.can-be-genius-seed",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aecp",
+				"mcna": "com.apple.itunes.collection-description",
+				"mcty": 9
+			},
+			{
+				"mcnm": "aeDL",
+				"mcna": "com.apple.itunes.drm-downloader-user-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aeFA",
+				"mcna": "com.apple.itunes.drm-family-id",
+				"mcty": 7
+			},
+			{
+				"mcnm": "aels",
+				"mcna": "com.apple.itunes.liked-state",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ajal",
+				"mcna": "com.apple.itunes.store.album-liked-state",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ajcA",
+				"mcna": "com.apple.itunes.store.show-composer-as-artist",
+				"mcty": 1
+			},
+			{
+				"mcnm": "awrk",
+				"mcna": "daap.songwork",
+				"mcty": 9
+			},
+			{
+				"mcnm": "amvm",
+				"mcna": "daap.songmovementname",
+				"mcty": 9
+			},
+			{
+				"mcnm": "amvc",
+				"mcna": "daap.songmovementcount",
+				"mcty": 3
+			},
+			{
+				"mcnm": "amvn",
+				"mcna": "daap.songmovementnumber",
+				"mcty": 3
+			},
+			{
+				"mcnm": "ajuw",
+				"mcna": "com.apple.itunes.store.use-work-name-as-display-name",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ajAV",
+				"mcna": "com.apple.itunes.store.is-ams-video",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ajAT",
+				"mcna": "com.apple.itunes.store.ams-show-type",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ajAE",
+				"mcna": "com.apple.itunes.store.ams-episode-type",
+				"mcty": 1
+			},
+			{
+				"mcnm": "ajAS",
+				"mcna": "com.apple.itunes.store.ams-episode-sort-order",
+				"mcty": 1
+			},
+			{
+				"mcnm": "aeSV",
+				"mcna": "com.apple.itunes.music-sharing-version",
+				"mcty": 5
+			}
+		]
+	}
+}

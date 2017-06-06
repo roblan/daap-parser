@@ -3,7 +3,12 @@ const fs = require('fs');
 
 const Parser = require('../daapparser');
 
-const files = ['server-info'];
+const files = fs.readdirSync('./test')
+	.filter(
+		file => file.endsWith('.daap')
+	).map(
+		file => file.split('.')[0]
+	);
 
 describe('DAAP Parser', () => {
 	describe('parsing', () => {
