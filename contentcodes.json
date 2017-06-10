@@ -155,7 +155,8 @@
 	},
 	"mcnm": {
 		"name": ["dmap.contentcodesnumber"],
-		"type": 9
+		"type": 9,
+		"encoding": "latin1"
 	},
 	"mcna": {
 		"name": ["dmap.contentcodesname"],

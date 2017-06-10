@@ -32,14 +32,14 @@ const parse = {
 	number: function (part) {
 		return part.readUIntBE(0, part.length);
 	},
-	string: function(part) {
-		return part.toString('latin1');//.replace(/�/, '');
+	string: function(part, encoding = 'utf8') {
+		return part.toString(encoding);
 	},
 	date: function(part) {
 		return new Date(parse.number(part)*1000);
 	},
 	hex: function(part) {
-		return '0x' + (part.toString('hex').replace(/^0+/, '') || '0');
+		return '0x' + part.toString('hex');
 	},
 	version: function(part) {
 		return [
@@ -55,7 +55,7 @@ const parse = {
 			end;
 
 		while (part.length > 8) {
-			code = parse.string(part.slice(0, 4));
+			code = parse.string(part.slice(0, 4), 'latin1');
 			end = parse.number(part.slice(4, 8)) + 8;
 			content = parse.tag(code, part.slice(8, end));
 
@@ -80,7 +80,9 @@ const parse = {
 		return parsed;
 	},
 	tag: function (code, part) {
-		return parse[fnmap[contentCodes[code] ? contentCodes[code].type : CONTENT_TYPE.LONG] || 'hex'](part);
+		const type = contentCodes[code] ? contentCodes[code].type : CONTENT_TYPE.LONG;
+		const encoding = type === CONTENT_TYPE.STRING && contentCodes[code] && contentCodes[code].encoding;
+		return parse[fnmap[type] || 'hex'](part, encoding);
 	},
 	translate: function (data, short) {
 		var parsed;
@@ -127,16 +129,18 @@ const encode = {
 				const packed = Buffer.concat(obj[code].map(child => encode.tag(code, child, codeInfo.type)));
 				buffer = Buffer.concat([buffer, packed]);
 			} else {
-				buffer = Buffer.concat([buffer, encode.tag(code, obj[code], codeInfo.type)]);
+				buffer = Buffer.concat([buffer, encode.tag(code, obj[code], codeInfo.type, codeInfo.encoding)]);
 			}
 		});
 		return buffer;
 	},
 	wrapTag(code, data) {
-		return Buffer.concat([encode.string(code), encode.number(data.length, 4), data]);
+		return Buffer.concat([encode.string(code, 'latin1'), encode.number(data.length, 4), data]);
 	},
-	tag(code, data, type) {
-		const decoded = encode[fnmap[type || CONTENT_TYPE.LONG]](data, LENGTHS[type]);
+	tag(code, data, type, encoding) {
+		const arg = type === CONTENT_TYPE.STRING ? encoding : LENGTHS[type];
+		type = fnmap[type || CONTENT_TYPE.LONG];
+		const decoded = encode[type](data, arg);
 		return this.wrapTag(code, decoded);
 	},
 	number(data, length) {
@@ -144,8 +148,8 @@ const encode = {
 		buffer.writeUIntBE(data, 0, length);
 		return buffer;
 	},
-	string(data) {
-		return Buffer.from(data, 'latin1');
+	string(data, encoding = 'utf8') {
+		return Buffer.from(data, encoding);
 	},
 	version(data) {
 		data = data.split('.');
@@ -156,9 +160,8 @@ const encode = {
 	date(data, length) {
 		return encode.number(new Date(data)/1000, length);
 	},
-	hex(data, length) {
+	hex(data) {
 		data = data.substr(2);
-		data = new Array(length - data.length || data.length%2).fill(0).join('') + data;
 		return Buffer.from(data, 'hex');
 	}
 }
