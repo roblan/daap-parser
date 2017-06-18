@@ -2,14 +2,15 @@ const assert = require('assert');
 const fs = require('fs');
 
 const Parser = require('../daapparser');
+const path = './test/data/';
 
-const files = fs.readdirSync('./test')
+const files = fs.readdirSync(path)
 	.filter(file => file.endsWith('.daap'))
 	.map(file => file.split('.')[0])
 	.map(file => ({
 		name: file,
-		json: require(`../test/${file}.json`),
-		daap: fs.readFileSync(`./test/${file}.daap`),
+		json: JSON.parse(fs.readFileSync(path + `${file}.json`, 'utf8')),
+		daap: fs.readFileSync(path + `${file}.daap`),
 	}));
 
 describe('DAAP Parser', () => {

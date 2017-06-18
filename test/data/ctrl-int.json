@@ -1,0 +1,25 @@
+{
+	"caci": {
+		"mstt": 200,
+		"muty": 0,
+		"mtco": 1,
+		"mrco": 1,
+		"mlcl": {
+			"mlit": [{
+				"miid": 1,
+				"cmik": 1,
+				"cmpr": "0x00020002",
+				"capr": "0x00020005",
+				"cmsp": 1,
+				"aeFR": 100,
+				"cmsv": 1,
+				"cass": 1,
+				"caov": "0x01",
+				"casu": 1,
+				"ceSG": 1,
+				"cmrl": "0x01",
+				"ceSX": "0x0000000000000007"
+			}]
+		}
+	}
+}

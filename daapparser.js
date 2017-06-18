@@ -23,7 +23,6 @@ const LENGTHS = {
 	[CONTENT_TYPE.BYTE]: 1,
 	[CONTENT_TYPE.SHORT]: 2,
 	[CONTENT_TYPE.INT]: 4,
-	[CONTENT_TYPE.LONG]: 16,
 	[CONTENT_TYPE.DATE]: 4,
 	[CONTENT_TYPE.VERSION]: 4
 };
@@ -94,10 +93,10 @@ const parse = {
 		} else if (Object.prototype.toString.call(data) === '[object Object]') {
 			parsed = Object.keys(data).reduce((memo, code) => {
 				var value = parse.translate(data[code], short),
-					info = contentCodes[code] || { name: [code] },
+					info = contentCodes[code] || {},
 					preKey = short ? '[' + code + '] ' : '';
 
-				info.name.forEach(name => {
+				(info.name || []).forEach(name => {
 					memo[preKey + name] = value;
 				});
 
@@ -112,27 +111,26 @@ const parse = {
 
 const encode = {
 	parse(obj) {
-		let buffer = Buffer.alloc(0);
-		Object.keys(obj).forEach((code) => {
-			const codeInfo = contentCodes[code];
+		return Object.keys(obj).reduce((buffer, code) => {
+			const codeInfo = contentCodes[code] || { type: CONTENT_TYPE.LONG };
+			let part;
 			if (codeInfo.type === CONTENT_TYPE.CONTAINER) {
 				if (codeInfo.isArray) {
-					const packed = Buffer.concat(obj[code].map(
+					part = Buffer.concat(obj[code].map(
 						child => encode.wrapTag(code, encode.parse(child)))
 					);
-					buffer = Buffer.concat([buffer, packed]);
 				} else {
-					const packed = encode.parse(obj[code]);
-					buffer = Buffer.concat([buffer, encode.wrapTag(code, packed)]);
+					part = encode.wrapTag(code, encode.parse(obj[code]));
 				}
 			} else if (codeInfo.isArray) {
-				const packed = Buffer.concat(obj[code].map(child => encode.tag(code, child, codeInfo.type)));
-				buffer = Buffer.concat([buffer, packed]);
+				part = Buffer.concat(obj[code].map(
+					child => encode.tag(code, child, codeInfo.type)
+				));
 			} else {
-				buffer = Buffer.concat([buffer, encode.tag(code, obj[code], codeInfo.type, codeInfo.encoding)]);
+				part = encode.tag(code, obj[code], codeInfo.type, codeInfo.encoding);
 			}
-		});
-		return buffer;
+			return Buffer.concat([buffer, part]);
+		}, Buffer.alloc(0));
 	},
 	wrapTag(code, data) {
 		return Buffer.concat([encode.string(code, 'latin1'), encode.number(data.length, 4), data]);
@@ -161,7 +159,7 @@ const encode = {
 		return encode.number(new Date(data)/1000, length);
 	},
 	hex(data) {
-		data = data.substr(2);
+		data = data.startsWith('0x') ? data.substr(2) : data;
 		return Buffer.from(data, 'hex');
 	}
 }
