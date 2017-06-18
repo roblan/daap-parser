@@ -96,7 +96,7 @@ const parse = {
 					info = contentCodes[code] || {},
 					preKey = short ? '[' + code + '] ' : '';
 
-				(info.name || []).forEach(name => {
+				(info.name ? Array.isArray(info.name) ? info.name : [info.name] : []).forEach(name => {
 					memo[preKey + name] = value;
 				});
 

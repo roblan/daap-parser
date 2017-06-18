@@ -1,102 +1,102 @@
 {
 	"abal": {
-		"name": ["daap.browsealbumlisting"],
+		"name": "daap.browsealbumlisting",
 		"type": 12,
 		"isArray": true
 	},
 	"abar": {
-		"name": ["daap.browseartistlisting"],
+		"name": "daap.browseartistlisting",
 		"type": 12,
 		"isArray": true
 	},
 	"abcp": {
-		"name": ["daap.browsecomposerlisting"],
+		"name": "daap.browsecomposerlisting",
 		"type": 12,
 		"isArray": true
 	},
 	"abgn": {
-		"name": ["daap.browsegenrelisting"],
+		"name": "daap.browsegenrelisting",
 		"type": 12,
 		"isArray": true
 	},
 	"abpl": {
-		"name": ["daap.baseplaylist"],
+		"name": "daap.baseplaylist",
 		"type": 1
 	},
 	"abro": {
-		"name": ["daap.databasebrowse"],
+		"name": "daap.databasebrowse",
 		"type": 12
 	},
 	"adbs": {
-		"name": ["daap.databasesongs"],
+		"name": "daap.databasesongs",
 		"type": 12
 	},
 	"aeAD": {
-		"name": ["com.apple.itunes.adam-ids-array"],
+		"name": "com.apple.itunes.adam-ids-array",
 		"type": 12
 	},
 	"aeAI": {
-		"name": ["com.apple.itunes.itms-artistid"],
+		"name": "com.apple.itunes.itms-artistid",
 		"type": 5
 	},
 	"aeCF": {
-		"name": ["com.apple.itunes.cloud-flavor-id"],
+		"name": "com.apple.itunes.cloud-flavor-id",
 		"type": 7
 	},
 	"aeCI": {
-		"name": ["com.apple.itunes.itms-composerid"],
+		"name": "com.apple.itunes.itms-composerid",
 		"type": 5
 	},
 	"aeCK": {
-		"name": ["com.apple.itunes.cloud-library-kind"],
+		"name": "com.apple.itunes.cloud-library-kind",
 		"type": 1
 	},
 	"aeCM": {
-		"name": ["com.apple.itunes.cloud-match-type"],
+		"name": "com.apple.itunes.cloud-match-type",
 		"type": 1
 	},
 	"aeCR": {
-		"name": ["com.apple.itunes.content-rating"],
+		"name": "com.apple.itunes.content-rating",
 		"type": 9
 	},
 	"aeCS": {
-		"name": ["com.apple.itunes.artworkchecksum"],
+		"name": "com.apple.itunes.artworkchecksum",
 		"type": 5
 	},
 	"aeCU": {
-		"name": ["com.apple.itunes.cloud-user-id"],
+		"name": "com.apple.itunes.cloud-user-id",
 		"type": 7
 	},
 	"aeCd": {
-		"name": ["com.apple.itunes.cloud-id"],
+		"name": "com.apple.itunes.cloud-id",
 		"type": 7
 	},
 	"aeDL": {
-		"name": ["com.apple.itunes.drm-downloader-user-id"],
+		"name": "com.apple.itunes.drm-downloader-user-id",
 		"type": 7
 	},
 	"aeDP": {
-		"name": ["com.apple.itunes.drm-platform-id"],
+		"name": "com.apple.itunes.drm-platform-id",
 		"type": 5
 	},
 	"aeDR": {
-		"name": ["com.apple.itunes.drm-user-id"],
+		"name": "com.apple.itunes.drm-user-id",
 		"type": 7
 	},
 	"aeDV": {
-		"name": ["com.apple.itunes.drm-versions"],
+		"name": "com.apple.itunes.drm-versions",
 		"type": 5
 	},
 	"aeEN": {
-		"name": ["com.apple.itunes.episode-num-str"],
+		"name": "com.apple.itunes.episode-num-str",
 		"type": 9
 	},
 	"aeES": {
-		"name": ["com.apple.itunes.episode-sort"],
+		"name": "com.apple.itunes.episode-sort",
 		"type": 5
 	},
 	"aeFA": {
-		"name": ["com.apple.itunes.drm-family-id"],
+		"name": "com.apple.itunes.drm-family-id",
 		"type": 7
 	},
 	"aeFP": {
@@ -106,152 +106,152 @@
 		"type": 1
 	},
 	"aeGD": {
-		"name": ["com.apple.itunes.gapless-enc-dr"],
+		"name": "com.apple.itunes.gapless-enc-dr",
 		"type": 5
 	},
 	"aeGE": {
-		"name": ["com.apple.itunes.gapless-enc-del"],
+		"name": "com.apple.itunes.gapless-enc-del",
 		"type": 5
 	},
 	"aeGG": {
-		"name": ["com.apple.itunes.gapless-enc-dur"],
+		"name": "com.apple.itunes.gapless-enc-dur",
 		"type": 5
 	},
 	"aeGH": {
-		"name": ["com.apple.itunes.gapless-heur"],
+		"name": "com.apple.itunes.gapless-heur",
 		"type": 5
 	},
 	"aeGI": {
-		"name": ["com.apple.itunes.itms-genreid"],
+		"name": "com.apple.itunes.itms-genreid",
 		"type": 5
 	},
 	"aeGR": {
-		"name": ["com.apple.itunes.gapless-resy"],
+		"name": "com.apple.itunes.gapless-resy",
 		"type": 7
 	},
 	"aeGU": {
-		"name": ["com.apple.itunes.gapless-dur"],
+		"name": "com.apple.itunes.gapless-dur",
 		"type": 7
 	},
 	"aeGs": {
-		"name": ["com.apple.itunes.can-be-genius-seed"],
+		"name": "com.apple.itunes.can-be-genius-seed",
 		"type": 1
 	},
 	"aeHD": {
-		"name": ["com.apple.itunes.is-hd-video"],
+		"name": "com.apple.itunes.is-hd-video",
 		"type": 1
 	},
 	"aeHV": {
-		"name": ["com.apple.itunes.has-video"],
+		"name": "com.apple.itunes.has-video",
 		"type": 1
 	},
 	"aeK1": {
-		"name": ["com.apple.itunes.drm-key1-id"],
+		"name": "com.apple.itunes.drm-key1-id",
 		"type": 7
 	},
 	"aeK2": {
-		"name": ["com.apple.itunes.drm-key2-id"],
+		"name": "com.apple.itunes.drm-key2-id",
 		"type": 7
 	},
 	"aeMC": {
-		"name": ["com.apple.itunes.playlist-contains-media-type-count"],
+		"name": "com.apple.itunes.playlist-contains-media-type-count",
 		"type": 5
 	},
 	"aeMK": {
-		"name": ["com.apple.itunes.mediakind"],
+		"name": "com.apple.itunes.mediakind",
 		"type": 5
 	},
 	"aeMQ": {
 		"type": 1
 	},
 	"aeMX": {
-		"name": ["com.apple.itunes.movie-info-xml"],
+		"name": "com.apple.itunes.movie-info-xml",
 		"type": 9
 	},
 	"aeMk": {
-		"name": ["com.apple.itunes.extended-media-kind"],
+		"name": "com.apple.itunes.extended-media-kind",
 		"type": 5
 	},
 	"aeND": {
-		"name": ["com.apple.itunes.non-drm-user-id"],
+		"name": "com.apple.itunes.non-drm-user-id",
 		"type": 7
 	},
 	"aeNN": {
-		"name": ["com.apple.itunes.network-name"],
+		"name": "com.apple.itunes.network-name",
 		"type": 9
 	},
 	"aeNV": {
-		"name": ["com.apple.itunes.norm-volume"],
+		"name": "com.apple.itunes.norm-volume",
 		"type": 5
 	},
 	"aePC": {
-		"name": ["com.apple.itunes.is-podcast"],
+		"name": "com.apple.itunes.is-podcast",
 		"type": 1
 	},
 	"aePI": {
-		"name": ["com.apple.itunes.itms-playlistid"],
+		"name": "com.apple.itunes.itms-playlistid",
 		"type": 5
 	},
 	"aePP": {
-		"name": ["com.apple.itunes.is-podcast-playlist"],
+		"name": "com.apple.itunes.is-podcast-playlist",
 		"type": 1
 	},
 	"aePS": {
-		"name": ["com.apple.itunes.special-playlist"],
+		"name": "com.apple.itunes.special-playlist",
 		"type": 1
 	},
 	"aeRD": {
-		"name": ["com.apple.itunes.rental-duration"],
+		"name": "com.apple.itunes.rental-duration",
 		"type": 5
 	},
 	"aeRP": {
-		"name": ["com.apple.itunes.rental-pb-start"],
+		"name": "com.apple.itunes.rental-pb-start",
 		"type": 5
 	},
 	"aeRS": {
-		"name": ["com.apple.itunes.rental-start"],
+		"name": "com.apple.itunes.rental-start",
 		"type": 5
 	},
 	"aeRU": {
-		"name": ["com.apple.itunes.rental-pb-duration"],
+		"name": "com.apple.itunes.rental-pb-duration",
 		"type": 5
 	},
 	"aeSE": {
-		"name": ["com.apple.itunes.store-pers-id"],
+		"name": "com.apple.itunes.store-pers-id",
 		"type": 7
 	},
 	"aeSF": {
-		"name": ["com.apple.itunes.itms-storefrontid"],
+		"name": "com.apple.itunes.itms-storefrontid",
 		"type": 5
 	},
 	"aeSG": {
-		"name": ["com.apple.itunes.saved-genius"],
+		"name": "com.apple.itunes.saved-genius",
 		"type": 1
 	},
 	"aeSI": {
-		"name": ["com.apple.itunes.itms-songid"],
+		"name": "com.apple.itunes.itms-songid",
 		"type": 5
 	},
 	"aeSL": {
 		"type": 1
 	},
 	"aeSN": {
-		"name": ["com.apple.itunes.series-name"],
+		"name": "com.apple.itunes.series-name",
 		"type": 9
 	},
 	"aeSP": {
-		"name": ["com.apple.itunes.smart-playlist"],
+		"name": "com.apple.itunes.smart-playlist",
 		"type": 1
 	},
 	"aeSR": {
 		"type": 1
 	},
 	"aeSU": {
-		"name": ["com.apple.itunes.season-num"],
+		"name": "com.apple.itunes.season-num",
 		"type": 5
 	},
 	"aeSV": {
-		"name": ["com.apple.itunes.music-sharing-version"],
+		"name": "com.apple.itunes.music-sharing-version",
 		"type": 11
 	},
 	"aeSX": {
@@ -261,364 +261,404 @@
 		"type": 1
 	},
 	"aeXD": {
-		"name": ["com.apple.itunes.xid"],
+		"name": "com.apple.itunes.xid",
 		"type": 9
 	},
 	"aecp": {
-		"name": ["com.apple.itunes.collection-description"],
+		"name": "com.apple.itunes.collection-description",
 		"type": 9
 	},
 	"aelb": {
 		"type": 1
 	},
 	"aels": {
-		"name": ["com.apple.itunes.liked-state"],
+		"name": "com.apple.itunes.liked-state",
 		"type": 1
 	},
 	"agac": {
-		"name": ["daap.groupalbumcount"],
+		"name": "daap.groupalbumcount",
 		"type": 5
 	},
 	"agal": {
-		"name": ["dmap.groupalbum"],
+		"name": "dmap.groupalbum",
 		"type": 12
 	},
 	"agma": {
-		"name": ["daap.groupmatchedqueryalbumcount"],
+		"name": "daap.groupmatchedqueryalbumcount",
 		"type": 5
 	},
 	"agmi": {
-		"name": ["daap.groupmatchedqueryitemcount"],
+		"name": "daap.groupmatchedqueryitemcount",
 		"type": 5
 	},
 	"agrp": {
-		"name": ["daap.songgrouping"],
+		"name": "daap.songgrouping",
 		"type": 9
 	},
-	"ajal": {
-		"name": ["com.apple.itunes.store.album-liked-state"],
+	"ajAE": {
+		"name": "com.apple.itunes.store.ams-episode-type",
 		"type": 1
 	},
+	"ajAS": {
+		"name": "com.apple.itunes.store.ams-episode-sort-order",
+		"type": 1
+	},
+	"ajAT": {
+		"name": "com.apple.itunes.store.ams-show-type",
+		"type": 1
+	},
+	"ajAV": {
+		"name": "com.apple.itunes.store.is-ams-video",
+		"type": 1
+	},
+	"ajal": {
+		"name": "com.apple.itunes.store.album-liked-state",
+		"type": 1
+	},
+	"ajcA": {
+		"name": "com.apple.itunes.store.show-composer-as-artist",
+		"type": 1
+	},
+	"ajuw": {
+		"name": "com.apple.itunes.store.use-work-name-as-display-name",
+		"type": 1
+	},
+	"amvc": {
+		"name": "daap.songmovementcount",
+		"type": 3
+	},
+	"amvm": {
+		"name": "daap.songmovementname",
+		"type": 9
+	},
+	"amvn": {
+		"name": "daap.songmovementnumber",
+		"type": 3
+	},
 	"aply": {
-		"name": ["daap.databaseplaylists"],
+		"name": "daap.databaseplaylists",
 		"type": 12
 	},
 	"aprm": {
-		"name": ["daap.playlistrepeatmode"],
+		"name": "daap.playlistrepeatmode",
 		"type": 1
 	},
 	"apro": {
-		"name": ["daap.protocolversion"],
+		"name": "daap.protocolversion",
 		"type": 11
 	},
 	"apsm": {
-		"name": ["daap.playlistshufflemode"],
+		"name": "daap.playlistshufflemode",
 		"type": 1
 	},
 	"apso": {
-		"name": ["daap.playlistsongs"],
+		"name": "daap.playlistsongs",
 		"type": 12
 	},
 	"arif": {
-		"name": ["daap.resolveinfo"],
+		"name": "daap.resolveinfo",
 		"type": 12
 	},
 	"arsv": {
-		"name": ["daap.resolve"],
+		"name": "daap.resolve",
 		"type": 12
 	},
 	"asaa": {
-		"name": ["daap.songalbumartist"],
+		"name": "daap.songalbumartist",
 		"type": 9
 	},
 	"asac": {
-		"name": ["daap.songartworkcount"],
+		"name": "daap.songartworkcount",
 		"type": 3
 	},
 	"asai": {
-		"name": ["daap.songalbumid"],
+		"name": "daap.songalbumid",
 		"type": 7
 	},
 	"asal": {
-		"name": ["daap.songalbum"],
+		"name": "daap.songalbum",
 		"type": 9
 	},
 	"asar": {
-		"name": ["daap.songartist"],
+		"name": "daap.songartist",
 		"type": 9
 	},
 	"asas": {
-		"name": ["daap.songalbumuserratingstatus"],
+		"name": "daap.songalbumuserratingstatus",
 		"type": 1
 	},
 	"asbk": {
-		"name": ["daap.bookmarkable"],
+		"name": "daap.bookmarkable",
 		"type": 1
 	},
 	"asbo": {
-		"name": ["daap.songbookmark"],
+		"name": "daap.songbookmark",
 		"type": 5
 	},
 	"asbr": {
-		"name": ["daap.songbitrate"],
+		"name": "daap.songbitrate",
 		"type": 3
 	},
 	"asbt": {
-		"name": ["daap.songbeatsperminute"],
+		"name": "daap.songbeatsperminute",
 		"type": 3
 	},
 	"ascd": {
-		"name": ["daap.songcodectype"],
+		"name": "daap.songcodectype",
 		"type": 5
 	},
 	"ascm": {
-		"name": ["daap.songcomment"],
+		"name": "daap.songcomment",
 		"type": 9
 	},
 	"ascn": {
-		"name": ["daap.songcontentdescription"],
+		"name": "daap.songcontentdescription",
 		"type": 9
 	},
 	"asco": {
-		"name": ["daap.songcompilation"],
+		"name": "daap.songcompilation",
 		"type": 1
 	},
 	"ascp": {
-		"name": ["daap.songcomposer"],
+		"name": "daap.songcomposer",
 		"type": 9
 	},
 	"ascr": {
-		"name": ["daap.songcontentrating"],
+		"name": "daap.songcontentrating",
 		"type": 1
 	},
 	"ascs": {
-		"name": ["daap.songcodecsubtype"],
+		"name": "daap.songcodecsubtype",
 		"type": 5
 	},
 	"asct": {
-		"name": ["daap.songcategory"],
+		"name": "daap.songcategory",
 		"type": 9
 	},
 	"asda": {
-		"name": ["daap.songdateadded"],
+		"name": "daap.songdateadded",
 		"type": 10
 	},
 	"asdb": {
-		"name": ["daap.songdisabled"],
+		"name": "daap.songdisabled",
 		"type": 1
 	},
 	"asdc": {
-		"name": ["daap.songdisccount"],
+		"name": "daap.songdisccount",
 		"type": 3
 	},
 	"asdk": {
-		"name": ["daap.songdatakind"],
+		"name": "daap.songdatakind",
 		"type": 1
 	},
 	"asdm": {
-		"name": ["daap.songdatemodified"],
+		"name": "daap.songdatemodified",
 		"type": 10
 	},
 	"asdn": {
-		"name": ["daap.songdiscnumber"],
+		"name": "daap.songdiscnumber",
 		"type": 3
 	},
 	"asdp": {
-		"name": ["daap.songdatepurchased"],
+		"name": "daap.songdatepurchased",
 		"type": 10
 	},
 	"asdr": {
-		"name": ["daap.songdatereleased"],
+		"name": "daap.songdatereleased",
 		"type": 10
 	},
 	"asdt": {
-		"name": ["daap.songdescription"],
+		"name": "daap.songdescription",
 		"type": 9
 	},
 	"ased": {
-		"name": ["daap.songextradata"],
+		"name": "daap.songextradata",
 		"type": 3
 	},
 	"aseq": {
-		"name": ["daap.songeqpreset"],
+		"name": "daap.songeqpreset",
 		"type": 9
 	},
 	"ases": {
-		"name": ["daap.songexcludefromshuffle"],
+		"name": "daap.songexcludefromshuffle",
 		"type": 1
 	},
 	"asfm": {
-		"name": ["daap.songformat"],
+		"name": "daap.songformat",
 		"type": 9
 	},
 	"asgn": {
-		"name": ["daap.songgenre"],
+		"name": "daap.songgenre",
 		"type": 9
 	},
 	"asgp": {
-		"name": ["daap.songgapless"],
+		"name": "daap.songgapless",
 		"type": 1
 	},
 	"asgr": {
-		"name": ["daap.supportsgroups"],
+		"name": "daap.supportsgroups",
 		"type": 3
 	},
 	"ashp": {
-		"name": ["daap.songhasbeenplayed"],
+		"name": "daap.songhasbeenplayed",
 		"type": 1
 	},
 	"askd": {
-		"name": ["daap.songlastskipdate"],
+		"name": "daap.songlastskipdate",
 		"type": 10
 	},
 	"askp": {
-		"name": ["daap.songuserskipcount"],
+		"name": "daap.songuserskipcount",
 		"type": 5
 	},
 	"asky": {
-		"name": ["daap.songkeywords"],
+		"name": "daap.songkeywords",
 		"type": 9
 	},
 	"aslc": {
-		"name": ["daap.songlongcontentdescription"],
+		"name": "daap.songlongcontentdescription",
 		"type": 9
 	},
 	"aslr": {
-		"name": ["daap.songalbumuserrating"],
+		"name": "daap.songalbumuserrating",
 		"type": 1
 	},
 	"asls": {
-		"name": ["daap.songlongsize"],
+		"name": "daap.songlongsize",
 		"type": 7
 	},
 	"aspc": {
-		"name": ["daap.songuserplaycount"],
+		"name": "daap.songuserplaycount",
 		"type": 5
 	},
 	"aspl": {
-		"name": ["daap.songdateplayed"],
+		"name": "daap.songdateplayed",
 		"type": 10
 	},
 	"aspu": {
-		"name": ["daap.songpodcasturl"],
+		"name": "daap.songpodcasturl",
 		"type": 9
 	},
 	"asri": {
-		"name": ["daap.songartistid"],
+		"name": "daap.songartistid",
 		"type": 7
 	},
 	"asrs": {
-		"name": ["daap.songuserratingstatus"],
+		"name": "daap.songuserratingstatus",
 		"type": 1
 	},
 	"asrv": {
-		"name": ["daap.songrelativevolume"],
+		"name": "daap.songrelativevolume",
 		"type": 1
 	},
 	"assa": {
-		"name": ["daap.sortartist"],
+		"name": "daap.sortartist",
 		"type": 9
 	},
 	"assc": {
-		"name": ["daap.sortcomposer"],
+		"name": "daap.sortcomposer",
 		"type": 9
 	},
 	"asse": {
 		"type": 7
 	},
 	"assl": {
-		"name": ["daap.sortalbumartist"],
+		"name": "daap.sortalbumartist",
 		"type": 9
 	},
 	"assn": {
-		"name": ["daap.sortname"],
+		"name": "daap.sortname",
 		"type": 9
 	},
 	"assp": {
-		"name": ["daap.songstoptime"],
+		"name": "daap.songstoptime",
 		"type": 5
 	},
 	"assr": {
-		"name": ["daap.songsamplerate"],
+		"name": "daap.songsamplerate",
 		"type": 5
 	},
 	"asss": {
-		"name": ["daap.sortseriesname"],
+		"name": "daap.sortseriesname",
 		"type": 9
 	},
 	"asst": {
-		"name": ["daap.songstarttime"],
+		"name": "daap.songstarttime",
 		"type": 5
 	},
 	"assu": {
-		"name": ["daap.sortalbum"],
+		"name": "daap.sortalbum",
 		"type": 9
 	},
 	"assz": {
-		"name": ["daap.songsize"],
+		"name": "daap.songsize",
 		"type": 5
 	},
 	"astc": {
-		"name": ["daap.songtrackcount"],
+		"name": "daap.songtrackcount",
 		"type": 3
 	},
 	"astm": {
-		"name": ["daap.songtime"],
+		"name": "daap.songtime",
 		"type": 5
 	},
 	"astn": {
-		"name": ["daap.songtracknumber"],
+		"name": "daap.songtracknumber",
 		"type": 3
 	},
 	"asul": {
-		"name": ["daap.songdataurl"],
+		"name": "daap.songdataurl",
 		"type": 9
 	},
 	"asur": {
-		"name": ["daap.songuserrating"],
+		"name": "daap.songuserrating",
 		"type": 1
 	},
 	"asvc": {
-		"name": ["daap.songprimaryvideocodec"],
+		"name": "daap.songprimaryvideocodec",
 		"type": 5
 	},
 	"asyr": {
-		"name": ["daap.songyear"],
+		"name": "daap.songyear",
 		"type": 3
 	},
 	"ated": {
-		"name": ["daap.supportsextradata"],
+		"name": "daap.supportsextradata",
 		"type": 3
 	},
 	"avdb": {
-		"name": ["daap.serverdatabases"],
+		"name": "daap.serverdatabases",
 		"type": 12
 	},
+	"awrk": {
+		"name": "daap.songwork",
+		"type": 9
+	},
 	"caar": {
-		"name": ["dacp.availablerepeatstates"],
+		"name": "dacp.availablerepeatstates",
 		"type": 5
 	},
 	"caas": {
-		"name": ["dacp.availableshufflestates"],
+		"name": "dacp.availableshufflestates",
 		"type": 5
 	},
 	"caci": {
-		"name": ["dacp.controllers"],
+		"name": "dacp.controllers",
 		"type": 12
 	},
 	"cads": {
 		"type": 1
 	},
 	"cafe": {
-		"name": ["dacp.fullscreenenabled"],
+		"name": "dacp.fullscreenenabled",
 		"type": 1
 	},
 	"cafs": {
-		"name": ["dacp.fullscreen"],
+		"name": "dacp.fullscreen",
 		"type": 1
 	},
 	"caia": {
-		"name": ["dacp.isactive"],
+		"name": "dacp.isactive",
 		"type": 1
 	},
 	"caip": {
@@ -631,35 +671,35 @@
 		"type": 1
 	},
 	"cana": {
-		"name": ["dacp.nowplayingartist"],
+		"name": "dacp.nowplayingartist",
 		"type": 9
 	},
 	"cang": {
-		"name": ["dacp.nowplayinggenre"],
+		"name": "dacp.nowplayinggenre",
 		"type": 9
 	},
 	"canl": {
-		"name": ["dacp.nowplayingalbum"],
+		"name": "dacp.nowplayingalbum",
 		"type": 9
 	},
 	"cann": {
-		"name": ["dacp.nowplayingname"],
+		"name": "dacp.nowplayingname",
 		"type": 9
 	},
 	"canp": {
-		"name": ["dacp.nowplayingguid"],
+		"name": "dacp.nowplayingguid",
 		"type": 7
 	},
 	"cant": {
-		"name": ["dacp.remaininglength"],
+		"name": "dacp.remaininglength",
 		"type": 5
 	},
 	"caps": {
-		"name": ["dacp.playstatus"],
+		"name": "dacp.playstatus",
 		"type": 1
 	},
 	"carp": {
-		"name": ["dacp.repeatstate"],
+		"name": "dacp.repeatstate",
 		"type": 1
 	},
 	"casa": {
@@ -669,54 +709,54 @@
 		"type": 1
 	},
 	"cash": {
-		"name": ["dacp.shufflestate"],
+		"name": "dacp.shufflestate",
 		"type": 1
 	},
 	"casp": {
-		"name": ["dacp.speakers"],
+		"name": "dacp.speakers",
 		"type": 12
 	},
 	"cass": {
-		"name": ["dacp.surroundsound"],
+		"name": "dacp.surroundsound",
 		"type": 1
 	},
 	"cast": {
-		"name": ["dacp.totalength"],
+		"name": "dacp.totalength",
 		"type": 5
 	},
 	"casu": {
 		"type": 1
 	},
 	"cavc": {
-		"name": ["dacp.volumecontrollable"],
+		"name": "dacp.volumecontrollable",
 		"type": 1
 	},
 	"cave": {
-		"name": ["dacp.visualizerenabled"],
+		"name": "dacp.visualizerenabled",
 		"type": 1
 	},
 	"cavs": {
-		"name": ["dacp.visualizer"],
+		"name": "dacp.visualizer",
 		"type": 1
 	},
 	"ceGS": {
-		"name": ["com.apple.itunes.genius-selectable"],
+		"name": "com.apple.itunes.genius-selectable",
 		"type": 1
 	},
 	"ceJC": {
-		"name": ["com.apple.itunes.jukebox-client-vote"],
+		"name": "com.apple.itunes.jukebox-client-vote",
 		"type": 1
 	},
 	"ceJI": {
-		"name": ["com.apple.itunes.jukebox-current"],
+		"name": "com.apple.itunes.jukebox-current",
 		"type": 5
 	},
 	"ceJS": {
-		"name": ["com.apple.itunes.jukebox-score"],
+		"name": "com.apple.itunes.jukebox-score",
 		"type": 3
 	},
 	"ceJV": {
-		"name": ["com.apple.itunes.jukebox-vote"],
+		"name": "com.apple.itunes.jukebox-vote",
 		"type": 5
 	},
 	"ceQI": {
@@ -753,108 +793,108 @@
 		"type": "null"
 	},
 	"cmgt": {
-		"name": ["dmcp.getproperty"],
+		"name": "dmcp.getproperty",
 		"type": 12
 	},
 	"cmik": {
 		"type": 1
 	},
 	"cmmk": {
-		"name": ["dmcp.mediakind"],
+		"name": "dmcp.mediakind",
 		"type": 5
 	},
 	"cmnm": {
-		"name": ["dacp.devicename"],
+		"name": "dacp.devicename",
 		"type": 9
 	},
 	"cmpa": {
-		"name": ["dacp.pairinganswer"],
+		"name": "dacp.pairinganswer",
 		"type": 12
 	},
 	"cmpg": {
-		"name": ["dacp.pairingguid"],
+		"name": "dacp.pairingguid",
 		"type": 7
 	},
 	"cmsp": {
-		"name": ["dacp.supportsplayback"],
+		"name": "dacp.supportsplayback",
 		"type": 1
 	},
 	"cmsr": {
-		"name": ["dacp.serverrevision"],
+		"name": "dacp.serverrevision",
 		"type": 5
 	},
 	"cmst": {
-		"name": ["dacp.status"],
+		"name": "dacp.status",
 		"type": 12
 	},
 	"cmsv": {
-		"name": ["dacp.supportsvolume"],
+		"name": "dacp.supportsvolume",
 		"type": 1
 	},
 	"cmty": {
-		"name": ["dacp.devicetype"],
+		"name": "dacp.devicetype",
 		"type": 9
 	},
 	"cmvo": {
-		"name": ["dmcp.volume"],
+		"name": "dmcp.volume",
 		"type": 5
 	},
 	"fch": {
-		"name": ["dmap.haschildcontainers"],
+		"name": "dmap.haschildcontainers",
 		"type": 1
 	},
 	"mbcl": {
-		"name": ["dmap.bag"],
+		"name": "dmap.bag",
 		"type": 12
 	},
 	"mccr": {
-		"name": ["dmap.contentcodesresponse"],
+		"name": "dmap.contentcodesresponse",
 		"type": 12
 	},
 	"mcna": {
-		"name": ["dmap.contentcodesname"],
+		"name": "dmap.contentcodesname",
 		"type": 9
 	},
 	"mcnm": {
-		"name": ["dmap.contentcodesnumber"],
+		"name": "dmap.contentcodesnumber",
 		"type": 9,
 		"encoding": "latin1"
 	},
 	"mcon": {
-		"name": ["dmap.container"],
+		"name": "dmap.container",
 		"type": 12
 	},
 	"mctc": {
-		"name": ["dmap.containercount"],
+		"name": "dmap.containercount",
 		"type": 5
 	},
 	"mcti": {
-		"name": ["dmap.containeritemid"],
+		"name": "dmap.containeritemid",
 		"type": 5
 	},
 	"mcty": {
-		"name": ["dmap.contentcodestype"],
+		"name": "dmap.contentcodestype",
 		"type": 3
 	},
 	"mdcl": {
-		"name": ["dmap.dictionary"],
+		"name": "dmap.dictionary",
 		"type": 12,
 		"isArray": true
 	},
 	"mdst": {
-		"name": ["dmap.downloadstatus"],
+		"name": "dmap.downloadstatus",
 		"type": 1
 	},
 	"meds": {
-		"name": ["dmap.editcommandssupported"],
+		"name": "dmap.editcommandssupported",
 		"type": 5
 	},
 	"meia": {
-		"name": ["dmap.itemdateadded"],
+		"name": "dmap.itemdateadded",
 		"type": 10
 	},
 	"meip": {
-		"name": ["dmap.itemdateplayed"],
+		"name": "dmap.itemdateplayed",
 		"type": 10
 	},
 	"merr": {
@@ -864,103 +904,103 @@
 		"type": 5
 	},
 	"mext": {
-		"name": ["dmap.objectextradata"],
+		"name": "dmap.objectextradata",
 		"type": 3
 	},
 	"miid": {
-		"name": ["dmap.itemid"],
+		"name": "dmap.itemid",
 		"type": 5
 	},
 	"mikd": {
-		"name": ["dmap.itemkind"],
+		"name": "dmap.itemkind",
 		"type": 1
 	},
 	"mimc": {
-		"name": ["dmap.itemcount"],
+		"name": "dmap.itemcount",
 		"type": 5
 	},
 	"minm": {
-		"name": ["dmap.itemname"],
+		"name": "dmap.itemname",
 		"type": 9
 	},
 	"mlcl": {
-		"name": ["dmap.listing"],
+		"name": "dmap.listing",
 		"type": 12
 	},
 	"mlid": {
-		"name": ["dmap.sessionid"],
+		"name": "dmap.sessionid",
 		"type": 5
 	},
 	"mlit": {
-		"name": ["dmap.listingitem"],
+		"name": "dmap.listingitem",
 		"type": 12,
 		"isArray": true
 	},
 	"mlog": {
-		"name": ["dmap.loginresponse"],
+		"name": "dmap.loginresponse",
 		"type": 12
 	},
 	"mpco": {
-		"name": ["dmap.parentcontainerid"],
+		"name": "dmap.parentcontainerid",
 		"type": 5
 	},
 	"mper": {
-		"name": ["dmap.persistentid"],
+		"name": "dmap.persistentid",
 		"type": 7
 	},
 	"mpro": {
-		"name": ["dmap.protocolversion"],
+		"name": "dmap.protocolversion",
 		"type": 11
 	},
 	"mrco": {
-		"name": ["dmap.returnedcount"],
+		"name": "dmap.returnedcount",
 		"type": 5
 	},
 	"mrpr": {
-		"name": ["dmap.remotepersistentid"],
+		"name": "dmap.remotepersistentid",
 		"type": 7
 	},
 	"msal": {
-		"name": ["dmap.supportsautologout"],
+		"name": "dmap.supportsautologout",
 		"type": 1
 	},
 	"msas": {
-		"name": ["dmap.authenticationschemes"],
+		"name": "dmap.authenticationschemes",
 		"type": 1
 	},
 	"msau": {
-		"name": ["dmap.authenticationmethod"],
+		"name": "dmap.authenticationmethod",
 		"type": 1
 	},
 	"msbr": {
-		"name": ["dmap.supportsbrowse"],
+		"name": "dmap.supportsbrowse",
 		"type": 1
 	},
 	"mscu": {
 		"type": 7
 	},
 	"msdc": {
-		"name": ["dmap.databasescount"],
+		"name": "dmap.databasescount",
 		"type": 5
 	},
 	"msed": {
-		"name": ["dmap.editable"],
+		"name": "dmap.editable",
 		"type": 1
 	},
 	"msex": {
-		"name": ["dmap.supportsextensions"],
+		"name": "dmap.supportsextensions",
 		"type": 1
 	},
 	"msix": {
-		"name": ["dmap.supportsindex"],
+		"name": "dmap.supportsindex",
 		"type": 1
 	},
 	"mslr": {
-		"name": ["dmap.loginrequired"],
+		"name": "dmap.loginrequired",
 		"type": 1
 	},
 	"msma": {
-		"name": ["dmap.machineaddress"],
+		"name": "dmap.machineaddress",
 		"type": 7,
 		"isArray": true
 	},
@@ -968,74 +1008,74 @@
 		"type": 12
 	},
 	"mspi": {
-		"name": ["dmap.supportspersistentids"],
+		"name": "dmap.supportspersistentids",
 		"type": 1
 	},
 	"msqy": {
-		"name": ["dmap.supportsquery"],
+		"name": "dmap.supportsquery",
 		"type": 1
 	},
 	"msrs": {
-		"name": ["dmap.supportsresolve"],
+		"name": "dmap.supportsresolve",
 		"type": 1
 	},
 	"msrv": {
-		"name": ["dmap.serverinforesponse"],
+		"name": "dmap.serverinforesponse",
 		"type": 12
 	},
 	"mstc": {
-		"name": ["dmap.utctime"],
+		"name": "dmap.utctime",
 		"type": 10
 	},
 	"mstm": {
-		"name": ["dmap.timeoutinterval"],
+		"name": "dmap.timeoutinterval",
 		"type": 5
 	},
 	"msto": {
-		"name": ["dmap.utcoffset"],
+		"name": "dmap.utcoffset",
 		"type": 5
 	},
 	"msts": {
-		"name": ["dmap.statusstring"],
+		"name": "dmap.statusstring",
 		"type": 9
 	},
 	"mstt": {
-		"name": ["dmap.status"],
+		"name": "dmap.status",
 		"type": 5
 	},
 	"msup": {
-		"name": ["dmap.supportsupdate"],
+		"name": "dmap.supportsupdate",
 		"type": 1
 	},
 	"msur": {
-		"name": ["dmap.serverrevision"],
+		"name": "dmap.serverrevision",
 		"type": 5
 	},
 	"mtco": {
-		"name": ["dmap.specifiedtotalcount"],
+		"name": "dmap.specifiedtotalcount",
 		"type": 5
 	},
 	"mudl": {
-		"name": ["dmap.deletedidlisting"],
+		"name": "dmap.deletedidlisting",
 		"type": 12
 	},
 	"mupd": {
-		"name": ["dmap.updateresponse"],
+		"name": "dmap.updateresponse",
 		"type": 12
 	},
 	"musr": {
-		"name": ["dmap.serverrevision"],
+		"name": "dmap.serverrevision",
 		"type": 5
 	},
 	"muty": {
-		"name": ["dmap.updatetype"],
+		"name": "dmap.updatetype",
 		"type": 1
 	},
 	"ppro": {
 		"type": 5
 	},
 	"prsv": {
-		"name": ["dmap.resolve"],
+		"name": "dmap.resolve",
 		"type": 12
 	}
 }
