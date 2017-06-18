@@ -1,6 +1,6 @@
 {
   "name": "daap-parser",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "DAAP parser",
   "main": "daapparser.js",
   "scripts": {
