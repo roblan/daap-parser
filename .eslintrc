@@ -1,0 +1,13 @@
+{
+    "extends": "airbnb-base",
+    "rules": {
+        "comma-dangle": ["error", "always-multiline"],
+        "indent": ["error", "tab"],
+        "no-console": ["warn", { allow: ["warn", "error"] }],
+        "no-param-reassign": ["error", { "ignorePropertyModificationsFor": ["memo"] }],
+        "no-tabs": [0]
+    },
+    "env": {
+        "node": true
+    }
+}

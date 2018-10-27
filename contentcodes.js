@@ -1,17 +1,19 @@
-const contentCodes = require('./contentcodes.json');
+/* eslint-disable no-console */
 const fs = require('fs');
-const req = JSON.parse(fs.readFileSync(`./test/data/content-codes.json`, 'utf8'));
+const contentCodes = require('./contentcodes.json');
+
+const req = JSON.parse(fs.readFileSync('./test/data/content-codes.json', 'utf8'));
 
 const noName = [];
-Object.keys(contentCodes).forEach(code => {
+Object.keys(contentCodes).forEach((code) => {
 	if (!contentCodes[code].name) {
 		noName.push(code);
 	}
 });
 
-if(noName.length) {
+if (noName.length) {
 	console.log(
-`- name missing
+		`- name missing
   ${noName.join(', ')}
 `
 	);
@@ -19,9 +21,8 @@ if(noName.length) {
 
 const add = {};
 const notInCC = [];
-const wrongName = [];
-req.mccr.mdcl.forEach(info => {
-	if (info.mcnm === "\u0000\u0000\u0000\u0000") {
+req.mccr.mdcl.forEach((info) => {
+	if (info.mcnm === '\u0000\u0000\u0000\u0000') {
 		return;
 	}
 	if (!contentCodes[info.mcnm]) {
@@ -29,14 +30,14 @@ req.mccr.mdcl.forEach(info => {
 
 		add[info.mcnm] = {
 			name: info.mcna,
-			type: info.mcty
+			type: info.mcty,
 		};
 	}
 });
 
-if(notInCC.length) {
+if (notInCC.length) {
 	console.log(
-`- not in contentcodes.json
+		`- not in contentcodes.json
   ${notInCC.join(', ')}
 `
 	);

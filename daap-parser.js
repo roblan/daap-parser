@@ -1,15 +1,16 @@
 const contentCodes = require('./contentcodes.json');
+
 const CONTENT_TYPE = {
-	'BYTE': 1,
-	'SHORT': 3,
-	'INT': 5,
-	'LONG': 7,
-	'STRING': 9,
-	'DATE': 10,
-	'VERSION': 11,
-	'CONTAINER': 12
+	BYTE: 1,
+	SHORT: 3,
+	INT: 5,
+	LONG: 7,
+	STRING: 9,
+	DATE: 10,
+	VERSION: 11,
+	CONTAINER: 12,
 };
-const fnmap = {
+const fnMap = {
 	[CONTENT_TYPE.CONTAINER]: 'container',
 	[CONTENT_TYPE.BYTE]: 'number',
 	[CONTENT_TYPE.SHORT]: 'number',
@@ -17,88 +18,85 @@ const fnmap = {
 	[CONTENT_TYPE.LONG]: 'hex',
 	[CONTENT_TYPE.STRING]: 'string',
 	[CONTENT_TYPE.DATE]: 'date',
-	[CONTENT_TYPE.VERSION]: 'version'
+	[CONTENT_TYPE.VERSION]: 'version',
 };
 const LENGTHS = {
 	[CONTENT_TYPE.BYTE]: 1,
 	[CONTENT_TYPE.SHORT]: 2,
 	[CONTENT_TYPE.INT]: 4,
 	[CONTENT_TYPE.DATE]: 4,
-	[CONTENT_TYPE.VERSION]: 4
+	[CONTENT_TYPE.VERSION]: 4,
 };
 
 const parse = {
-	number: function (part) {
+	number(part) {
 		return part.readUIntBE(0, part.length);
 	},
-	string: function(part, encoding = 'utf8') {
+	string(part, encoding = 'utf8') {
 		return part.toString(encoding);
 	},
-	date: function(part) {
-		return new Date(parse.number(part)*1000);
+	date(part) {
+		return new Date(parse.number(part) * 1000);
 	},
-	hex: function(part) {
-		return '0x' + part.toString('hex');
+	hex(part) {
+		return `0x${part.toString('hex')}`;
 	},
-	version: function(part) {
+	version(part) {
 		return [
 			parse.number(part.slice(0, 2)),
 			parse.number(part.slice(2, 3)),
-			parse.number(part.slice(3))
+			parse.number(part.slice(3)),
 		].join('.');
 	},
-	container: function (part) {
-		var parsed = {},
-			content,
-			code,
-			end;
+	container(part) {
+		const parsed = {};
+		let subpart = part;
 
-		while (part.length > 8) {
-			code = parse.string(part.slice(0, 4), 'latin1');
-			end = parse.number(part.slice(4, 8)) + 8;
-			content = parse.tag(code, part.slice(8, end));
+		while (subpart.length > 8) {
+			const code = parse.string(subpart.slice(0, 4), 'latin1');
+			const end = parse.number(subpart.slice(4, 8)) + 8;
+			const content = parse.tag(code, subpart.slice(8, end));
 
-			if(!parsed[code]) {
+			if (!parsed[code]) {
 				parsed[code] = content;
 				if (contentCodes[code] && contentCodes[code].isArray) {
 					parsed[code] = [parsed[code]];
 				}
 			} else {
-				if(!Array.isArray(parsed[code])) {
+				if (!Array.isArray(parsed[code])) {
 					parsed[code] = [parsed[code]];
 					if (!contentCodes[code] || !contentCodes[code].isArray) {
-						console.warn('contentParser: ' + code + ' is array!');
+						console.warn(`contentParser: ${code} is array!`);
 					}
 				}
 				parsed[code].push(content);
 			}
 
-			part = part.slice(end);
+			subpart = subpart.slice(end);
 		}
 
 		return parsed;
 	},
-	tag: function (code, part) {
+	tag(code, part) {
 		const type = contentCodes[code] ? contentCodes[code].type : CONTENT_TYPE.LONG;
-		const encoding = type === CONTENT_TYPE.STRING && contentCodes[code] && contentCodes[code].encoding;
-		return parse[fnmap[type] || 'hex'](part, encoding);
+		const encoding = type === CONTENT_TYPE.STRING
+			&& contentCodes[code]
+			&& contentCodes[code].encoding;
+		return parse[fnMap[type] || 'hex'](part, encoding);
 	},
-	translate: function (data, short) {
-		var parsed;
+	translate(data, short) {
+		let parsed;
 
 		if (Array.isArray(data)) {
-			parsed = data.map(function (item) {
-				return parse.translate(item, short);
-			});
+			parsed = data.map(item => parse.translate(item, short));
 		} else if (Object.prototype.toString.call(data) === '[object Object]') {
 			parsed = Object.keys(data).reduce((memo, code) => {
-				var value = parse.translate(data[code], short),
-					info = contentCodes[code] || {},
-					preKey = short ? '[' + code + '] ' : '';
-
-				(info.name ? Array.isArray(info.name) ? info.name : [info.name] : []).forEach(name => {
+				const value = parse.translate(data[code], short);
+				const { name } = contentCodes[code] || {};
+				const preKey = short ? `[${code}] ` : '';
+				if (name) {
 					memo[preKey + name] = value;
-				});
+				}
 
 				return memo;
 			}, {});
@@ -106,7 +104,7 @@ const parse = {
 			parsed = data;
 		}
 		return parsed;
-	}
+	},
 };
 
 const encode = {
@@ -117,8 +115,8 @@ const encode = {
 			if (codeInfo.type === CONTENT_TYPE.CONTAINER) {
 				if (codeInfo.isArray) {
 					part = Buffer.concat(obj[code].map(
-						child => encode.wrapTag(code, encode.parse(child)))
-					);
+						child => encode.wrapTag(code, encode.parse(child))
+					));
 				} else {
 					part = encode.wrapTag(code, encode.parse(obj[code]));
 				}
@@ -137,8 +135,8 @@ const encode = {
 	},
 	tag(code, data, type, encoding) {
 		const arg = type === CONTENT_TYPE.STRING ? encoding : LENGTHS[type];
-		type = fnmap[type || CONTENT_TYPE.LONG];
-		const decoded = encode[type](data, arg);
+		const fn = fnMap[type || CONTENT_TYPE.LONG];
+		const decoded = encode[fn](data, arg);
 		return this.wrapTag(code, decoded);
 	},
 	number(data, length) {
@@ -150,23 +148,22 @@ const encode = {
 		return Buffer.from(data, encoding);
 	},
 	version(data) {
-		data = data.split('.');
+		const ver = data.split('.');
 		return Buffer.concat([2, 1, 1].map(
-			(length, index) => encode.number(data[index], length))
-		);
+			(length, index) => encode.number(ver[index], length)
+		));
 	},
 	date(data, length) {
-		return encode.number(new Date(data)/1000, length);
+		return encode.number(new Date(data) / 1000, length);
 	},
 	hex(data) {
-		data = data.startsWith('0x') ? data.substr(2) : data;
-		return Buffer.from(data, 'hex');
-	}
-}
+		return Buffer.from(data.startsWith('0x') ? data.substr(2) : data, 'hex');
+	},
+};
 
 module.exports = {
 	parse: parse.container,
 	parseTag: parse.tag,
 	encode: encode.parse,
-	translate: parse.translate
+	translate: parse.translate,
 };

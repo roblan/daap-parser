@@ -2,9 +2,10 @@
   "name": "daap-parser",
   "version": "0.0.3",
   "description": "DAAP parser",
-  "main": "daapparser.js",
+  "main": "daap-parser.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint --ext .js ./"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^3.4.2"
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0"
   }
 }
