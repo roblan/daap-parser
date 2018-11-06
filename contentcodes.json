@@ -71,6 +71,10 @@
 		"name": "com.apple.itunes.cloud-id",
 		"type": 7
 	},
+	"aeDE": {
+		"name": "com.apple.itunes.longest-content-description",
+		"type": 9
+	},
 	"aeDL": {
 		"name": "com.apple.itunes.drm-downloader-user-id",
 		"type": 7
