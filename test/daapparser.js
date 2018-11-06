@@ -1,6 +1,6 @@
 const assert = require('assert');
 const fs = require('fs');
-const Parser = require('../daap-parser');
+const parser = require('../daap-parser');
 
 const path = './test/data/';
 
@@ -13,11 +13,11 @@ const files = fs.readdirSync(path)
 		daap: fs.readFileSync(`${path}${file}.daap`),
 	}));
 
-describe('DAAP Parser', () => {
+describe('DAAP parser', () => {
 	describe('parsing', () => {
 		files.forEach((file) => {
 			it(file.name, () => {
-				const parsed = Parser.parse(file.daap);
+				const parsed = parser.parse(file.daap);
 
 				assert.deepEqual(JSON.parse(JSON.stringify(parsed)), file.json);
 			});
@@ -27,7 +27,7 @@ describe('DAAP Parser', () => {
 	describe('encoding', () => {
 		files.forEach((file) => {
 			it(file.name, () => {
-				const encoded = Parser.encode(file.json);
+				const encoded = parser.encode(file.json);
 
 				assert.ok(encoded.equals(file.daap));
 			});

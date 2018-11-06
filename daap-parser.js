@@ -93,10 +93,9 @@ const parse = {
 			parsed = Object.keys(data).reduce((memo, code) => {
 				const value = parse.translate(data[code], short);
 				const { name } = contentCodes[code] || {};
-				const preKey = short ? `[${code}] ` : '';
-				if (name) {
-					memo[preKey + name] = value;
-				}
+				const preKey = short || !name ? `[${code}]` : '';
+
+				memo[[preKey, name].filter(Boolean).join(' ')] = value;
 
 				return memo;
 			}, {});
